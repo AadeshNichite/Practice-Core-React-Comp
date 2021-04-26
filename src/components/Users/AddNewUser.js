@@ -38,7 +38,7 @@ const AddNewUser = (props) => {
                 title:'Invalid Age',
                 message: 'Please Enter a valid Age (> 0).'
             })
-            return
+            return;
         }
         props.onAddUser(eneteredUserName,eneteredUserAge);
         setEnteredUserName('');
